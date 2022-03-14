@@ -8,5 +8,11 @@
     $bar = (substr($_SERVER['DOCUMENT_ROOT'], -1) == '/')?"":"/";
     define('DIRREQ',"{$_SERVER['DOCUMENT_ROOT']}{$bar}{$dirIn}");
 
+    #Banco de Dados
+    define('HOST','localhost');
+    define('DB','sistema_events');
+    define('USER','root');
+    define('PASS','');
+
     #Incluir arquivos
     include(DIRREQ.'biblioteca-calendario-php/core/composer/vendor/autoload.php');
