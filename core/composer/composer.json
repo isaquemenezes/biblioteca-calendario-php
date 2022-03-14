@@ -1,0 +1,18 @@
+{
+    "name": "dev/calendar",
+    "description": "Calendario Agenda de Eventos Php",
+    "autoload": {
+        "psr-4": {
+            "Dev\\Calendar\\": "src/",
+            "Classes\\": "../../class",
+            "Models\\": "../../model"
+        }
+    },
+    "authors": [
+        {
+            "name": "Isaque Menezes da Silva",
+            "email": "isaque-menezes@hotmail.com"
+        }
+    ],
+    "require": {}
+}
