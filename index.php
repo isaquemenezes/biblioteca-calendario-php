@@ -14,6 +14,11 @@
 
 <body>
 
+<?php 
+    //case de test DB $conect = new Models\ModelConect(); return var_dump($conect->conectDB());  
+     //case de testnamespace Classes  $obj = new Classes\ClassTeste();
+?>
+
 <div class="calendar"></div>
     
 <script src="<?php echo DIRPAGE.'core/FullCalendar/main.min.js';?>"></script>

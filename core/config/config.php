@@ -10,9 +10,9 @@
 
     #Banco de Dados
     define('HOST','localhost');
-    define('DB','sistema_events');
+    define('DB','sistema_calendar');
     define('USER','root');
-    define('PASS','');
+    define('PASSWORD','');
 
     #Incluir arquivos
     include(DIRREQ.'core/composer/vendor/autoload.php');
