@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "All Day Event",
+        "start": "2022-04-01",
+        "end": "2022-04-02",
+        "color": "blue"
+      },
+      {
+        "id": 2,
+        "title": "Long Event",
+        "start": "2022-09-07",
+        "end": "2022-10-10",
+        "color": "red",
+        "textColor": "yellow"
+      },
+      {
+        "id":3, 
+        "title": "Click for Google",
+        "url": "http://google.com/",
+        "start": "2022-03-28"
+      }
+]

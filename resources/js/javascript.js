@@ -23,18 +23,27 @@
             // change the day's background color just for fun
             info.dayEl.style.backgroundColor = 'red';
         },
-        events: [
+        /*events: [
             {
                 title: 'The Title',
-                start: '2022-04-01',
-                end: '2022-04-02'
+                start: '2020-10-01',
+                end: '2020-10-02'
             },
             {
                 title: 'The Title 2',
-                start: '2022-04-05',
-                end: '2022-04-07'
+                start: '2020-10-05',
+                end: '2020-10-07'
             }
-        ]
+        ]*/
+
+        //Events por JSON
+        events: './resources/js/events.json',
+
+        //Events click 
+        eventClick: function(info_arg) {
+            win.location.href = `https://www.zerosite/eventos/${info_arg.event.id}`;
+        }
+
     });
 
     calendar.render();
