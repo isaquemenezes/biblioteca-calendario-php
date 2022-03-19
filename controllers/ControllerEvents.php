@@ -1,5 +1,5 @@
 <?php 
-    include "../core/config.php";
+    include "../core/config/config.php";
 
     $objEvents = new \Classes\ClassEvents();
     echo $objEvents->getEvents();

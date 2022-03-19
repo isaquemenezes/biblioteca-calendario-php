@@ -37,7 +37,8 @@
         ]*/
 
         //Events por JSON
-        events: './resources/js/events.json',
+        /*events: './resources/js/events.json',*/
+        events: './controllers/ControllerEvents.php',
 
         //Events click 
         eventClick: function(info_arg) {
