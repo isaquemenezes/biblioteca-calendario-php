@@ -9,7 +9,8 @@
 ?>
 
 
-
+ <div class="calendar"></div>
+ 
 <a href="<?php echo DIRPAGE.'views/user'; ?>">Caledário do user</a><br><br>
 <a href="<?php echo DIRPAGE.'views/manager'; ?>">Calendário do manager</a>
 

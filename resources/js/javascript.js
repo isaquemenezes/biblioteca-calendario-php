@@ -57,6 +57,9 @@
         getCalendar('user', '.calendar_user');
     } else if(doc.querySelector('.calendar_manager')) {
         getCalendar('manager','.calendar_manager');
+    } 
+    else {
+        getCalendar('sem', '.calendar');
     }
 
    
