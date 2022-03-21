@@ -26,8 +26,14 @@
             dateClick: function(info) {
                 if (perfil == 'manager') {
                     alert('Vai pra page do manager');
-                } else {
+                } else if (perfil == 'user'){
                     alert('vai pra page do user');
+                } else {
+                    if (info.view.type == 'dayGridMonth') {
+                        calendar.changeView('timeGrid', info.dateStr);
+                    } else {
+                        win.location.href = './add.php?date='+info.dateStr;
+                    }
                 }
 
                 // alert('Clicked on: ' + info.dateStr);
