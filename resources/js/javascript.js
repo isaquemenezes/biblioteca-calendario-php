@@ -42,7 +42,7 @@
             //Events click 
             eventClick: function(info_arg) {
                 if (perfil == 'manager'){
-                    win.location.href = `views/manager/editar?id=${info_arg.event.id}`;
+                    win.location.href = `./views/manager/editar?id=${info_arg.event.id}`;
                 }
             }
     
@@ -55,10 +55,9 @@
 
     if (doc.querySelector('.calendar_user')) {
         getCalendar('user', '.calendar_user');
-    } else if(doc.querySelector('.calendar_manager')) {
+    } else if (doc.querySelector('.calendar_manager')){
         getCalendar('manager','.calendar_manager');
-    } 
-    else {
+    } else {
         getCalendar('sem', '.calendar');
     }
 
