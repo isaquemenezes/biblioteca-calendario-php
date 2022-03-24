@@ -25,14 +25,12 @@
             
             dateClick: function(info) {
                 if (perfil == 'manager') {
-                    alert('Vai pra page do manager');
-                } else if (perfil == 'user'){
-                    alert('vai pra page do user');
+                    calendar.changeView('timeGrid', info.dateStr);
                 } else {
                     if (info.view.type == 'dayGridMonth') {
                         calendar.changeView('timeGrid', info.dateStr);
                     } else {
-                        win.location.href = './add.php?date='+info.dateStr;
+                        win.location.href = './views/add.php?date='+info.dateStr;
                     }
                 }
 
@@ -42,13 +40,14 @@
                 
                
             },
-           
+            
+            //Controller do evento traz os dados do db
             events: './controllers/ControllerEvents.php',
     
             //Events click 
             eventClick: function(info_arg) {
                 if (perfil == 'manager'){
-                    win.location.href = `./views/manager/editar?id=${info_arg.event.id}`;
+                    win.location.href = `./views/manager_pages/edit.php?id=${info_arg.event.id}`;
                 }
             }
     
@@ -63,6 +62,8 @@
         getCalendar('user', '.calendar_user');
     } else if (doc.querySelector('.calendar_manager')){
         getCalendar('manager','.calendar_manager');
+    } else if (doc.querySelector('.calendar_head')) {
+        getCalendar('head', '.calendar_head');
     } else {
         getCalendar('sem', '.calendar');
     }

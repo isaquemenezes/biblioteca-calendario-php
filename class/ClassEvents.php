@@ -30,5 +30,29 @@
 
 
         }
+
+        #Buscar Eventos pelo id
+        public function getEventsById($id)
+        {
+            $query_select = $this->conectDB()->prepare("select * from events where id=?");
+            $query_select->bindParam(1, $id, \PDO::PARAM_INT);
+            $query_select->execute();
+            $select=$query_select->fetch(\PDO::FETCH_ASSOC);
+
+            return $select;
+        }
+
+        #update no db 
+        public function update_events($id, $title, $description, $start) 
+        {
+            $query_update = $this->conectDB()->prepare("update events set title=?, description=?, start=? where id=?");
+            $query_update->bindParam(1, $title, \PDO::PARAM_STR);
+            $query_update->bindParam(2, $description, \PDO::PARAM_STR);
+            $query_update->bindParam(3, $start, \PDO::PARAM_STR);
+            $query_update->bindParam(4, $id, \PDO::PARAM_INT);
+
+            $query_update->execute();
+
+        }
     
     }

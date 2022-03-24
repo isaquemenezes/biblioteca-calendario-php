@@ -9,7 +9,7 @@
 ?>
 
 
- <div class="calendar"></div>
+ <div class="calendar_manager"></div>
  
 
 
