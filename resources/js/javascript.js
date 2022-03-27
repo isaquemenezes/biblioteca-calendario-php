@@ -49,6 +49,9 @@
                 if (perfil == 'manager'){
                     win.location.href = `./views/manager_pages/edit.php?id=${info_arg.event.id}`;
                 }
+                // if (perfil == 'manager'){
+                //     win.location.href = `./editar.php?id=${info_arg.event.id}`;
+                // }
             }
     
         });

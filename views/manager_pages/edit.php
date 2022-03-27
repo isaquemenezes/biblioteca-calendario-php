@@ -12,7 +12,7 @@
     // Teste unitário var_dump($date);
 ?>
      
-    <form method="post" name="form_name" id="form_id" action="<?php echo DIRPAGE.'./controllers/ControllerEdit.php'; ?>">
+    <form method="post" name="form_name" id="form_id" action="<?php echo DIRPAGE.'controllers/ControllerEdit.php'; ?>">
         <input type="hidden" name="id_name" id="id_edit" value="<?php echo $_GET['id']?>">
 
         Data: <input type="date" name="date_form" id="data_id" value="<?php echo $date->format("Y-m-d"); ?>"><br>

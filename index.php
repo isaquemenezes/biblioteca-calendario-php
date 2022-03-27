@@ -10,6 +10,10 @@
 
 
  <div class="calendar_manager"></div>
+
+ <div class="">
+     <a href="<?php echo DIRPAGE.'views/user_pages/' ?>">Page USER</a>
+ </div>
  
 
 

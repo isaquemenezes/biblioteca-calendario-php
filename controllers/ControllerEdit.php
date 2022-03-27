@@ -12,13 +12,15 @@
     
     $start= new \DateTime($date.''.$time, new \DateTimeZone('America/Sao_Paulo'));
 
-    // $objEvents->update_events(
-    //     $id,
-    //     $title,
-    //     $description,
-    //     $start->format("Y-m-d H:i:s")
-    // );
+    $objEvents->update_events(
+        $id,
+        $title,
+        $description,
+        $start->format("Y-m-d H:i:s")
+    );
+   
     
     
     // Teste Unitário 
-    var_dump($_POST);
+    //var_dump($_POST);
+       
