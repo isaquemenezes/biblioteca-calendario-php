@@ -21,8 +21,10 @@
         Queixa: <input type="text" name="description_form" id="description_id" value="<?php echo $events['description']?>"><br>
         
         <input type="submit" value="Marcar Consulta">
+    <a id="delete" href="<?php echo DIRPAGE.'controllers/ControllerDelete.php?id='.$_GET['id']; ?>">Deleta</a>
 
-    </form>
+    </form>        
+
 
 
 <?php include DIRREQ."resources/templates/footer.php"; ?>

@@ -13,6 +13,7 @@
 
  <div class="">
      <a href="<?php echo DIRPAGE.'views/user_pages/' ?>">Page USER</a>
+     <a href="<?php echo DIRPAGE.'views/manager_pages/' ?>">Page Manager</a>
  </div>
  
 

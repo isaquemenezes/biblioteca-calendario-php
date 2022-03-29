@@ -46,12 +46,12 @@
     
             //Events click 
             eventClick: function(info_arg) {
-                if (perfil == 'manager'){
-                    win.location.href = `./views/manager_pages/edit.php?id=${info_arg.event.id}`;
-                }
                 // if (perfil == 'manager'){
-                //     win.location.href = `./editar.php?id=${info_arg.event.id}`;
+                //     win.location.href = `./views/manager_pages/edit.php?id=${info_arg.event.id}`;
                 // }
+                if (perfil == 'manager'){
+                    win.location.href = `./editar.php?id=${info_arg.event.id}`;
+                }
             }
     
         });
@@ -69,6 +69,16 @@
         getCalendar('head', '.calendar_head');
     } else {
         getCalendar('sem', '.calendar');
+    }
+
+    if(doc.querySelector('#delete')){
+        let btn=doc.querySelector('#delete');
+        btn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            if(confirm("Deseja mesmo apagar este dado?")){
+                win.location.href=e.target.parentNode.href;
+            }
+        },false);
     }
 
    

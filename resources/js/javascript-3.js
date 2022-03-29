@@ -26,8 +26,14 @@
             dateClick: function(info) {
                 if (perfil == 'manager') {
                     alert('Vai pra page do manager');
-                } else {
+                } else if (perfil == 'user'){
                     alert('vai pra page do user');
+                } else {
+                    if (info.view.type == 'dayGridMonth') {
+                        calendar.changeView('timeGrid', info.dateStr);
+                    } else {
+                        win.location.href = './add.php?date='+info.dateStr;
+                    }
                 }
 
                 // alert('Clicked on: ' + info.dateStr);
@@ -36,7 +42,8 @@
                 
                
             },
-           
+            
+            //Controller do evento traz os dados do db
             events: './controllers/ControllerEvents.php',
     
             //Events click 
@@ -57,6 +64,8 @@
         getCalendar('user', '.calendar_user');
     } else if (doc.querySelector('.calendar_manager')){
         getCalendar('manager','.calendar_manager');
+    } else if (doc.querySelector('.calendar_head')) {
+        getCalendar('head', '.calendar_head');
     } else {
         getCalendar('sem', '.calendar');
     }

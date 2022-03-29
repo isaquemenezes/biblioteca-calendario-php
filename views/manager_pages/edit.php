@@ -23,6 +23,7 @@
         <input type="submit" value="Marcar Consulta">
 
     </form>
+    <a id="delete" href="<?php echo DIRPAGE.'controllers/ControllerDelete.php?id='.$_GET['id']; ?>"><img src="<?php echo DIRPAGE.'img/button-trash.png' ?>" alt=""></a>
 
 
 <?php include DIRREQ."resources/templates/footer.php"; ?>
